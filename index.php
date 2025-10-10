@@ -13,126 +13,112 @@
         <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
         <style>
             .glass {
-                background: rgba(200, 220, 217, 0.15);
-                backdrop-filter: blur(10px);
-                border: 1px solid rgba(37, 128, 167, 0.1);
+            background: rgba(200, 220, 217, 0.15);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(37, 128, 167, 0.1);
             }
-
             /* Smooth gradient animation */
             @keyframes gradient {
-                0% { background-position: 0% 50%; }
-                50% { background-position: 100% 50%; }
-                100% { background-position: 0% 50%; }
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
             }
-
             .gradient-animate {
-                background: linear-gradient(45deg, #ffffff, #c8dcd9, #ffffff, #f0f7f6);
-                background-size: 400% 400%;
-                animation: gradient 30s ease infinite;
+            background: linear-gradient(45deg, #ffffff, #c8dcd9, #ffffff, #f0f7f6);
+            background-size: 400% 400%;
+            animation: gradient 30s ease infinite;
             }
-
             /* Fade in animation (kept as custom animation used by several elements) */
             @keyframes fadeInUp {
-                from { opacity: 0; transform: translateY(30px); }
-                to   { opacity: 1; transform: translateY(0); }
+            from { opacity: 0; transform: translateY(30px); }
+            to   { opacity: 1; transform: translateY(0); }
             }
             .fade-in-up { animation: fadeInUp 0.8s ease-out forwards; }
-
             .delay-100 { animation-delay: 0.1s; opacity: 0; }
             .delay-200 { animation-delay: 0.2s; opacity: 0; }
             .delay-300 { animation-delay: 0.3s; opacity: 0; }
             .delay-400 { animation-delay: 0.4s; opacity: 0; }
-
             /* Floating animation for the right-side logo */
             @keyframes float { 0%,100% { transform: translateY(0px);} 50% { transform: translateY(-10px);} }
             .float { animation: float 7s ease-in-out infinite; }
-
             .nav-link { position: relative; transition: all 0.3s ease; }
             .nav-link::after {
-                content: '';
-                position: absolute;
-                bottom: -5px;
-                left: 0;
-                width: 0;
-                height: 2px;
-                background: #2580a7;
-                transition: width 0.3s ease;
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #2580a7;
+            transition: width 0.3s ease;
             }
             .nav-link:hover::after { width: 100%; }
-
             @keyframes scrollDown {
             0% {
-                transform: translateY(-50%);
+            transform: translateY(-50%);
             }
             100% {
-                transform: translateY();
+            transform: translateY();
             }
             }
-
             .animate-scrollDown {
             animation: scrollDown 60s linear infinite;
             }
-
             .animate-scrollDown:hover {
             animation-play-state: paused;
             cursor: pointer;
             }
-
             .event-item {
-                text-transform: none;
-                line-height: 1.1;
-                writing-mode: vertical-rl; /* make text vertical */
-                transform: rotate(180deg); /* read top-to-bottom */
-                white-space: nowrap;
-                display: inline-block;
-                padding: 0.1rem 0;
+            text-transform: none;
+            line-height: 1.1;
+            writing-mode: vertical-rl; /* make text vertical */
+            transform: rotate(180deg); /* read top-to-bottom */
+            white-space: nowrap;
+            display: inline-block;
+            padding: 0.1rem 0;
             }
             .label {
-                writing-mode: vertical-rl; /* vertical text */
-                transform: rotate(180deg); /* read top-to-bottom */
-                margin: 0;
-                clip-path: polygon(50% 0, 50% 0, 100% 25%, 100% 40%, 85% 40%, 85% 50%, 100% 50%, 100% 100%, 50% 100%, 0 100%, 0 50%, 15% 50%, 15% 40%, 0% 40%, 0% 25%);
-                animation: jiggleLabel 2s infinite;
+            writing-mode: vertical-rl; /* vertical text */
+            transform: rotate(180deg); /* read top-to-bottom */
+            margin: 0;
+            clip-path: polygon(50% 0, 50% 0, 100% 25%, 100% 40%, 85% 40%, 85% 50%, 100% 50%, 100% 100%, 50% 100%, 0 100%, 0 50%, 15% 50%, 15% 40%, 0% 40%, 0% 25%);
+            animation: jiggleLabel 2s infinite;
             }
-
-                @keyframes jiggleLabel {
-                    0% { transform: rotate(180deg) translateX(0); }
-                    10% { transform: rotate(180deg) translateX(-2px); }
-                    20% { transform: rotate(180deg) translateX(3px); }
-                    30% { transform: rotate(180deg) translateX(-4px); }
-                    40% { transform: rotate(180deg) translateX(2px); }
-                    50% { transform: rotate(180deg) translateX(-3px); }
-                    60% { transform: rotate(180deg) translateX(4px); }
-                    70% { transform: rotate(180deg) translateX(-2px); }
-                    80% { transform: rotate(180deg) translateX(3px); }
-                    90% { transform: rotate(180deg) translateX(-1px); }
-                    100% { transform: rotate(180deg) translateX(0); }
-                }
-
+            @keyframes jiggleLabel {
+            0% { transform: rotate(180deg) translateX(0); }
+            10% { transform: rotate(180deg) translateX(-2px); }
+            20% { transform: rotate(180deg) translateX(3px); }
+            30% { transform: rotate(180deg) translateX(-4px); }
+            40% { transform: rotate(180deg) translateX(2px); }
+            50% { transform: rotate(180deg) translateX(-3px); }
+            60% { transform: rotate(180deg) translateX(4px); }
+            70% { transform: rotate(180deg) translateX(-2px); }
+            80% { transform: rotate(180deg) translateX(3px); }
+            90% { transform: rotate(180deg) translateX(-1px); }
+            100% { transform: rotate(180deg) translateX(0); }
+            }
             /* Particle background effect (kept) */
             .particle { position: absolute; border-radius: 50%; background: rgba(37, 128, 167, 0.08); animation: rise 15s infinite ease-in; }
             @keyframes rise {
-                0% { bottom: -100px; opacity: 0; }
-                10% { opacity: 0.3; }
-                90% { opacity: 0.3; }
-                100% { bottom: 100%; opacity: 0; }
+            0% { bottom: -100px; opacity: 0; }
+            10% { opacity: 0.3; }
+            90% { opacity: 0.3; }
+            100% { bottom: 100%; opacity: 0; }
             }
-
             /* Modal styles (backdrop-filter and entrance animations are easier to keep here) */
             .modal {
-                display: none; position: fixed; inset: 0; width: 100vw; height: 100vh;
-                background: rgba(255,255,255,0.85); backdrop-filter: blur(16px) saturate(180%);
-                z-index: 1000; overflow-y: auto; transition: background 0.4s cubic-bezier(.4,0,.2,1);
+            display: none; position: fixed; inset: 0; width: 100vw; height: 100vh;
+            background: rgba(255,255,255,0.85); backdrop-filter: blur(16px) saturate(180%);
+            z-index: 1000; overflow-y: auto; transition: background 0.4s cubic-bezier(.4,0,.2,1);
             }
             .modal.active { display: flex; animation: fadeIn 0.3s ease-out; }
             @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-
             .modal-content {
-                animation: slideUp 0.4s ease-out;
-                box-shadow: 0 8px 32px 0 rgba(33, 118, 174, 0.18), 0 1.5px 6px 0 rgba(33, 118, 174, 0.10);
-                border: 1.5px solid rgba(33, 118, 174, 0.12);
-                background: rgba(255,255,255,0.85); backdrop-filter: blur(8px);
-                transition: box-shadow 0.3s cubic-bezier(.4,0,.2,1), background 0.3s cubic-bezier(.4,0,.2,1);
+            animation: slideUp 0.4s ease-out;
+            box-shadow: 0 8px 32px 0 rgba(33, 118, 174, 0.18), 0 1.5px 6px 0 rgba(33, 118, 174, 0.10);
+            border: 1.5px solid rgba(33, 118, 174, 0.12);
+            background: rgba(255,255,255,0.85); backdrop-filter: blur(8px);
+            transition: box-shadow 0.3s cubic-bezier(.4,0,.2,1), background 0.3s cubic-bezier(.4,0,.2,1);
             }
             @keyframes slideUp { from { transform: translateY(30px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
         </style>
@@ -155,57 +141,28 @@
                 <div class="particle" style="left: 80%; width: 5px; height: 5px; animation-delay: 7s;"></div>
                 <div class="particle" style="left: 90%; width: 4px; height: 4px; animation-delay: 2.5s;"></div>
             </div>
-            
-            <!-- Navigation - Mid Right -->
-            <nav class="absolute right-12 top-1/2 -translate-y-1/2 z-50">
+            <!-- Navigation -->
+            <nav class="absolute right-12 top-1/2 -translate-y-1/2 z-50 hidden md:block">
                 <ul class="flex flex-col space-y-6 text-tarawera items-end">
-                    <li class="fade-in-up delay-100">
-                        <a href="#association" onclick="openModal('associationModal'); return false;" class="nav-link text-lg font-light tracking-wide hover:text-jelly-bean transition-all duration-300">
-                            Association
-                        </a>
-                    </li>
-                    <li class="fade-in-up delay-200">
-                        <a href="#evenements" onclick="openModal('evenementsModal'); return false;" class="nav-link text-lg font-light tracking-wide hover:text-jelly-bean transition-all duration-300">
-                            Evènements
-                        </a>
-                    </li>
-                    <li class="fade-in-up delay-200">
-                        <a href="#projets" class="nav-link text-lg font-light tracking-wide hover:text-jelly-bean transition-all duration-300">
-                            Projets
-                        </a>
-                    </li>
-                    <li class="fade-in-up delay-300">
-                        <a href="#publications" class="nav-link text-lg font-light tracking-wide hover:text-jelly-bean transition-all duration-300">
-                            Publications
-                        </a>
-                    </li>
-                    <li class="fade-in-up delay-400">
-                        <a href="#sponsors" onclick="openModal('sponsorsModal'); return false;" class="nav-link text-lg font-light tracking-wide hover:text-jelly-bean transition-all duration-300">
-                            Sponsors
-                        </a>
-                    </li>
-                    <li class="fade-in-up delay-400">
-                        <a href="#contact" onclick="openModal('contactModal'); return false;" class="nav-link text-lg font-light tracking-wide hover:text-jelly-bean transition-all duration-300">
-                            Contact
-                        </a>
-                    </li>
+                    <li><a href="#association" onclick="openModal('associationModal'); return false;" class="nav-link text-lg font-light tracking-wide hover:text-jelly-bean transition-all duration-300">Association</a></li>
+                    <li><a href="#evenements" onclick="openModal('evenementsModal'); return false;" class="nav-link text-lg font-light tracking-wide hover:text-jelly-bean transition-all duration-300">Évènements</a></li>
+                    <li><a href="#projets" class="nav-link text-lg font-light tracking-wide hover:text-jelly-bean transition-all duration-300">Projets</a></li>
+                    <li><a href="#publications" class="nav-link text-lg font-light tracking-wide hover:text-jelly-bean transition-all duration-300">Publications</a></li>
+                    <li><a href="#sponsors" onclick="openModal('sponsorsModal'); return false;" class="nav-link text-lg font-light tracking-wide hover:text-jelly-bean transition-all duration-300">Sponsors</a></li>
+                    <li><a href="#contact" onclick="openModal('contactModal'); return false;" class="nav-link text-lg font-light tracking-wide hover:text-jelly-bean transition-all duration-300">Contact</a></li>
                 </ul>
-                
                 <!-- Social Links -->
-                <div class="mt-12 flex flex-col items-end space-y-6 fade-in-up delay-400">
-                    <!-- Facebook -->
+                <div class="mt-12 flex flex-col items-end space-y-6">
                     <a href="https://www.facebook.com/AMFAIM3D" target="_blank" rel="noopener" class="text-tarawera/50 hover:text-jelly-bean transition-colors duration-300">
                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M22.675 0h-21.35C.595 0 0 .592 0 1.326v21.348C0 23.408.595 24 1.325 24h11.495v-9.294H9.691v-3.622h3.129V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.729 0 1.324-.592 1.324-1.326V1.326C24 .592 23.404 0 22.675 0"/>
                         </svg>
                     </a>
-                    <!-- Instagram -->
                     <a href="#" class="text-tarawera/50 hover:text-jelly-bean transition-colors duration-300">
                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm4.25 3.25a5.25 5.25 0 1 1 0 10.5 5.25 5.25 0 0 1 0-10.5zm0 1.5a3.75 3.75 0 1 0 0 7.5 3.75 3.75 0 0 0 0-7.5zm5.25.75a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
                         </svg>
                     </a>
-                    <!-- LinkedIn -->
                     <a href="#" class="text-tarawera/50 hover:text-jelly-bean transition-colors duration-300">
                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
@@ -213,7 +170,28 @@
                     </a>
                 </div>
             </nav>
-
+            <!-- Mobile Hamburger -->
+            <div class="absolute top-6 right-6 z-50 md:hidden">
+                <button id="menu-toggle" class="text-tarawera focus:outline-none">
+                    <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+            <!-- Mobile Menu Panel -->
+            <div id="mobile-menu" class="fixed inset-x-0 top-0 bg-white/90 backdrop-blur-md shadow-lg text-tarawera hidden flex-col items-center py-8 space-y-6 text-lg font-light z-40">
+                <a href="#association" onclick="openModal('associationModal'); toggleMenu(false); return false;" class="hover:text-jelly-bean">Association</a>
+                <a href="#evenements" onclick="openModal('evenementsModal'); toggleMenu(false); return false;" class="hover:text-jelly-bean">Évènements</a>
+                <a href="#projets" onclick="toggleMenu(false)" class="hover:text-jelly-bean">Projets</a>
+                <a href="#publications" onclick="toggleMenu(false)" class="hover:text-jelly-bean">Publications</a>
+                <a href="#sponsors" onclick="openModal('sponsorsModal'); toggleMenu(false); return false;" class="hover:text-jelly-bean">Sponsors</a>
+                <a href="#contact" onclick="openModal('contactModal'); toggleMenu(false); return false;" class="hover:text-jelly-bean">Contact</a>
+                <div class="flex space-x-6 pt-4">
+                    <a href="https://www.facebook.com/AMFAIM3D" target="_blank" class="text-tarawera/50 hover:text-jelly-bean transition"><i class="fab fa-facebook text-xl"></i></a>
+                    <a href="#" class="text-tarawera/50 hover:text-jelly-bean transition"><i class="fab fa-instagram text-xl"></i></a>
+                    <a href="#" class="text-tarawera/50 hover:text-jelly-bean transition"><i class="fab fa-linkedin text-xl"></i></a>
+                </div>
+            </div>
             <div class="absolute left-10 top-0 h-screen w-[4.5rem] z-50 pointer-events-auto text-tarawera flex flex-col items-center justify-between text-xl border-b-8 border-tarawera">
                 <div class="label !bg-tarawera !text-white py-4 pt-14 px-2 !-mt-1">News</div>
                 <div class="overflow-hidden flex items-center h-[calc(100vh-3.5rem)]" aria-hidden="false">
@@ -230,10 +208,9 @@
                     </div>
                 </div>
             </div>
-            
             <!-- Main Content - Hero Flex Layout -->
             <div class="relative z-10 h-full flex items-center">
-                <div class="container mx-auto px-20 max-w-9xl flex flex-row items-center justify-between w-full">
+                <div class="container mx-auto px-20 max-w-9xl flex flex-col xl:flex-row items-center justify-between w-full">
                     <!-- Left: Text Content -->
                     <div class="max-w-9xl flex-1">
                         <h1 class="text-7xl font-bold text-tarawera mb-6 leading-tight fade-in-up delay-100 font-orbitron">
@@ -253,12 +230,12 @@
                             L'Association est à vocation scientifique, à but non lucratif et apolitique.
                         </p>
                         <div class="flex space-x-6 fade-in-up delay-400">
-                            <a href="#adhesion" class="group relative px-8 py-4 bg-jelly-bean text-white font-semibold rounded-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                            <a href="#contact" onclick="document.querySelector('input[name=subject]').value='Inscription 2026'; openModal('contactModal'); return false;" class="group relative px-8 py-4 bg-jelly-bean text-white font-semibold rounded-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl">
                                 <span class="relative z-10">Devenir Membre</span>
                                 <div class="absolute inset-0 bg-tarawera transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
                             </a>
-                            <a href="#apropos" class="group px-8 py-4 border-2 border-jelly-bean text-jelly-bean font-semibold rounded-lg transition-all duration-300 hover:bg-jelly-bean hover:text-white hover:scale-105 hover:shadow-2xl">
-                                En Savoir Plus
+                            <a href="#association" onclick="openModal('associationModal'); return false;" class="group px-8 py-4 border-2 border-jelly-bean text-jelly-bean font-semibold rounded-lg transition-all duration-300 hover:bg-jelly-bean hover:text-white hover:scale-105 hover:shadow-2xl">
+                            En Savoir Plus
                             </a>
                         </div>
                         <div class="mt-16 grid grid-cols-3 gap-8 max-w-2xl fade-in-up delay-400">
@@ -282,7 +259,6 @@
                     </div>
                 </div>
             </div>
-            
             <!-- Newsletter Signup - Bottom of Hero -->
             <div class="absolute bottom-4 left-0 w-full flex items-center justify-center z-40">
                 <form class="flex flex-col md:flex-row items-center gap-4 w-full max-w-5xl px-4 bg-white bg-opacity-10" action="#" method="POST">
@@ -293,7 +269,6 @@
                 </form>
             </div>
         </main>
-        
         <!-- Association Modal -->
         <div id="associationModal" class="modal">
             <div class="w-full max-w-7xl mx-auto p-6 my-12">
@@ -304,10 +279,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                         </svg>
                     </button>
-                    
                     <!-- Title -->
                     <h2 class="text-5xl font-bold text-tarawera mb-12 text-center">ASSOCIATION</h2>
-                    
                     <!-- President's Message -->
                     <div class="mb-16">
                         <h3 class="text-3xl font-bold text-jelly-bean mb-4">MOT DU PRÉSIDENT</h3>
@@ -319,24 +292,38 @@
                             <p>Et dans cet esprit d'ouverture aux autres disciplines scientifiques et de collaboration avec les acteurs nationaux et internationaux que nous entamons nos actions pour assurer notre mission et atteindre nos objectifs.</p>
                         </div>
                     </div>
-                    
                     <!-- Who We Are -->
                     <div class="mb-16">
                         <h3 class="text-3xl font-bold text-jelly-bean mb-4">QUI SOMMES-NOUS?</h3>
                         <p class="text-gray-700 leading-relaxed mb-8"><span class="font-semibold">A</span>ssociation Marocaine de Fabrication Additive et d'Impression 3D» (AMFAIM3D) est une association à vocation scientifique, à but non lucratif et apolitique. L'AMFAIM3D a une vision, une mission et des objectifs :</p>
-                        
                         <!-- Vision, Mission, Objectives Grid -->
                         <div class="grid md:grid-cols-3 gap-8 mb-8">
                             <div class="glass rounded-xl p-6">
-                                <h4 class="text-xl font-bold text-tarawera mb-3">Vision</h4>
+                                <h4 class="flex items-center gap-2 text-xl font-bold text-tarawera mb-3">
+                                    <span>Vision</span>
+                                    <svg class="w-6 h-6 text-jelly-bean" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/>
+                                        <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2" fill="none"/>
+                                    </svg>
+                                </h4>
                                 <p class="text-gray-700 text-sm leading-relaxed">Avoir une assise scientifique solide et large de la Fabrication Additive et d'Impression 3D.</p>
                             </div>
                             <div class="glass rounded-xl p-6">
-                                <h4 class="text-xl font-bold text-tarawera mb-3">Mission</h4>
+                                <h4 class="flex items-center gap-2 text-xl font-bold text-tarawera mb-3">
+                                    <span>Mission</span>
+                                    <svg class="w-6 h-6 text-jelly-bean" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                        <path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" fill="none"/>
+                                    </svg>
+                                </h4>
                                 <p class="text-gray-700 text-sm leading-relaxed">Sédentariser les sciences liées au domaine de la Fabrication Additive et de l'Impression 3D au niveau national et Contribuer au développement et au rayonnement de cette discipline au sein du grand public</p>
                             </div>
                             <div class="glass rounded-xl p-6">
-                                <h4 class="text-xl font-bold text-tarawera mb-3">Objectifs</h4>
+                                <h4 class="flex items-center gap-2 text-xl font-bold text-tarawera mb-3">
+                                    <span>Objectifs</span>
+                                    <svg class="w-6 h-6 text-jelly-bean" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                        <path d="M3 12h18M12 3v18" stroke="currentColor" stroke-width="2" fill="none"/>
+                                    </svg>
+                                </h4>
                                 <ul class="text-gray-700 text-sm leading-relaxed space-y-2">
                                     <li>• Animer et promouvoir la communauté scientifique en Fabrication Additive et Impression 3D</li>
                                     <li>• Créer des passerelles avec les autres disciplines scientifiques</li>
@@ -348,21 +335,19 @@
                             </div>
                         </div>
                     </div>
-                    
                     <!-- Staff -->
                     <div>
                         <h3 class="text-3xl font-bold text-jelly-bean mb-8 text-center">STAFF</h3>
                         <div class="grid md:grid-cols-3 gap-6">
                             <!-- Staff Member 1 - Khalid Zarbane -->
-                                <div class="text-center p-6 border border-nebula rounded-xl hover:shadow-lg transition-shadow duration-300">
-                                    <div class="mb-4 mx-auto w-40 h-52 rounded-full overflow-hidden border-4 border-jelly-bean">
-                                        <img src="./assets/images/staff/Zarbane.jpg" alt="Pr. Khalid Zarbane" class="w-full h-full object-scale-down">
-                                    </div>
+                            <div class="text-center p-6 border border-nebula rounded-xl hover:shadow-lg transition-shadow duration-300">
+                                <div class="mb-4 mx-auto w-40 h-52 rounded-full overflow-hidden border-4 border-jelly-bean">
+                                    <img src="./assets/images/staff/Zarbane.jpg" alt="Pr. Khalid Zarbane" class="w-full h-full object-scale-down">
+                                </div>
                                 <h4 class="text-lg font-bold text-tarawera mb-1">Pr. Khalid Zarbane</h4>
                                 <p class="text-jelly-bean font-semibold mb-2">Président</p>
                                 <p class="text-sm text-gray-600">Ecole Supérieure de Technologie, Université Hassan II, Casablanca, Maroc.</p>
                             </div>
-                            
                             <!-- Staff Member 2 - Zitouni Beidouri -->
                             <div class="text-center p-6 border border-nebula rounded-xl hover:shadow-lg transition-shadow duration-300">
                                 <div class="mb-4 mx-auto w-40 h-52 rounded-full overflow-hidden border-4 border-jelly-bean">
@@ -372,7 +357,6 @@
                                 <p class="text-jelly-bean font-semibold mb-2">Vice Président</p>
                                 <p class="text-sm text-gray-600">Ecole Supérieure de Technologie, Université Hassan II, Casablanca, Maroc.</p>
                             </div>
-                            
                             <!-- Staff Member 3 - Abdelali El Bouchti -->
                             <div class="text-center p-6 border border-nebula rounded-xl hover:shadow-lg transition-shadow duration-300">
                                 <div class="mb-4 mx-auto w-40 h-52 rounded-full overflow-hidden border-4 border-jelly-bean">
@@ -382,7 +366,6 @@
                                 <p class="text-jelly-bean font-semibold mb-2">Secrétaire général</p>
                                 <p class="text-sm text-gray-600">Institute for Forecasting and Futuristics (I2F)</p>
                             </div>
-                            
                             <!-- Staff Member 4 - Abdelkarim Chouaf -->
                             <div class="text-center p-6 border border-nebula rounded-xl hover:shadow-lg transition-shadow duration-300">
                                 <div class="mb-4 mx-auto w-40 h-52 rounded-full overflow-hidden border-4 border-jelly-bean">
@@ -392,7 +375,6 @@
                                 <p class="text-jelly-bean font-semibold mb-2">Conseiller</p>
                                 <p class="text-sm text-gray-600">Ecole Nationale Supérieure d'Electricité et de Mécanique, Université Hassan II, Casablanca, Maroc.</p>
                             </div>
-                            
                             <!-- Staff Member 5 - El Mehdi Abdeddine -->
                             <div class="text-center p-6 border border-nebula rounded-xl hover:shadow-lg transition-shadow duration-300">
                                 <div class="mb-4 mx-auto w-40 h-52 rounded-full overflow-hidden border-4 border-jelly-bean">
@@ -402,7 +384,6 @@
                                 <p class="text-jelly-bean font-semibold mb-2">Trésorier</p>
                                 <p class="text-sm text-gray-600">Ecole Nationale Supérieure d'Electricité et de Mécanique, Université Hassan II, Casablanca, Maroc.</p>
                             </div>
-                            
                             <!-- Staff Member 6 - Hassan Bouchachia (SVG placeholder) -->
                             <div class="text-center p-6 border border-nebula rounded-xl hover:shadow-lg transition-shadow duration-300">
                                 <div class="mb-4 mx-auto w-40 h-52 rounded-full overflow-hidden border-4 border-jelly-bean flex items-center justify-center bg-white">
@@ -416,7 +397,6 @@
                                 <p class="text-jelly-bean font-semibold mb-2">Vice Trésorier</p>
                                 <p class="text-sm text-gray-600">Chargé d'affaire des moyens industriels chez Groupe Renault.</p>
                             </div>
-                            
                             <!-- Staff Member 7 - Hayat Salhi -->
                             <div class="text-center p-6 border border-nebula rounded-xl hover:shadow-lg transition-shadow duration-300">
                                 <div class="mb-4 mx-auto w-40 h-52 rounded-full overflow-hidden border-4 border-jelly-bean">
@@ -426,7 +406,6 @@
                                 <p class="text-jelly-bean font-semibold mb-2">Conseiller</p>
                                 <p class="text-sm text-gray-600">Ecole Supérieure de Technologie, Université Hassan II, Casablanca, Maroc.</p>
                             </div>
-                            
                             <!-- Staff Member 8 - Mohamed Eloumami -->
                             <div class="text-center p-6 border border-nebula rounded-xl hover:shadow-lg transition-shadow duration-300">
                                 <div class="mb-4 mx-auto w-40 h-52 rounded-full overflow-hidden border-4 border-jelly-bean">
@@ -441,7 +420,6 @@
                 </div>
             </div>
         </div>
-        
         <!-- Events Modal -->
         <div id="evenementsModal" class="modal">
             <div class="w-full max-w-7xl mx-auto p-8 my-8">
@@ -452,10 +430,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                         </svg>
                     </button>
-                    
                     <!-- Title -->
                     <h2 class="text-5xl font-bold text-tarawera mb-12 text-center">ÉVÈNEMENTS</h2>
-                    
                     <!-- Events Grid -->
                     <div class="space-y-8">
                         <!-- Event 1 - CASICAM 2026 (Upcoming) -->
@@ -474,7 +450,6 @@
                                 <p><strong>Thèmes principaux :</strong> Matériaux avancés, Bioprinting, Industrie 4.0, Intelligence Artificielle, Durabilité</p>
                             </div>
                         </div>
-
                         <!-- Event 2 - CASICAM 2025 (Past Event) -->
                         <div class="border-l-4 border-tarawera pl-6 hover:shadow-lg transition-shadow duration-300 p-6 rounded-r-xl">
                             <div class="flex items-start justify-between mb-3">
@@ -499,7 +474,6 @@
                             </div>
                             <a href="#" class="text-jelly-bean hover:text-tarawera font-semibold transition-colors duration-300">Read More →</a>
                         </div>
-                        
                         <!-- Event 3 - CASICAM 2022 (Past Event) -->
                         <div class="border-l-4 border-tarawera pl-6 hover:shadow-lg transition-shadow duration-300 p-6 rounded-r-xl">
                             <div class="flex items-start justify-between mb-3">
@@ -525,7 +499,6 @@
                             </div>
                             <a href="#" class="text-jelly-bean hover:text-tarawera font-semibold transition-colors duration-300">Read More →</a>
                         </div>
-
                         <!-- Event 4 - CASICAM 2020 (Past Event) -->
                         <div class="border-l-4 border-tarawera pl-6 hover:shadow-lg transition-shadow duration-300 p-6 rounded-r-xl">
                             <div class="mb-3">
@@ -539,7 +512,6 @@
                             </p>
                             <a href="#" class="text-jelly-bean hover:text-tarawera font-semibold transition-colors duration-300">Read More →</a>
                         </div>
-
                         <!-- Event 5 - MW3DP 2019 (Past Event - Sticky) -->
                         <div class="border-l-4 border-tarawera pl-6 hover:shadow-lg transition-shadow duration-300 p-6 rounded-r-xl">
                             <div class="mb-3">
@@ -553,7 +525,6 @@
                             </p>
                             <a href="#" class="text-jelly-bean hover:text-tarawera font-semibold transition-colors duration-300">Read More →</a>
                         </div>
-
                         <!-- Event 6 - Inauguration (Past Event - Sticky) -->
                         <div class="border-l-4 border-tarawera pl-6 hover:shadow-lg transition-shadow duration-300 p-6 rounded-r-xl">
                             <div class="mb-3">
@@ -571,7 +542,6 @@
                 </div>
             </div>
         </div>
-        
         <!-- Sponsors Modal -->
         <div id="sponsorsModal" class="modal">
             <div class="w-full max-w-7xl mx-auto p-8 my-8">
@@ -582,11 +552,9 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                         </svg>
                     </button>
-                    
                     <!-- Title -->
                     <h2 class="text-5xl font-bold text-tarawera mb-4 text-center">NOS PARTENAIRES</h2>
                     <p class="text-gray-600 text-center mb-12">L'AMFAIM3D est fière de collaborer avec des institutions académiques, industrielles et de recherche de premier plan.</p>
-                    
                     <!-- Partners Grid -->
                     <div class="space-y-16">
                         <!-- All Partners -->
@@ -596,39 +564,32 @@
                                 <div class="flex items-center justify-center p-6 bg-white border-2 border-nebula rounded-xl hover:border-jelly-bean hover:shadow-lg transition-all duration-300">
                                     <img src="./assets/images/partners/UH2C.svg" alt="Université Hassan II de Casablanca" class="w-full h-20 object-contain">
                                 </div>
-                                
                                 <!-- EST -->
                                 <div class="flex items-center justify-center p-6 bg-white border-2 border-nebula rounded-xl hover:border-jelly-bean hover:shadow-lg transition-all duration-300">
                                     <img src="./assets/images/partners/UH2C_EST.svg" alt="École Supérieure de Technologie" class="w-full h-20 object-contain">
                                 </div>
-                                
                                 <!-- ENSEM -->
                                 <div class="flex items-center justify-center p-6 bg-white border-2 border-nebula rounded-xl hover:border-jelly-bean hover:shadow-lg transition-all duration-300">
                                     <img src="./assets/images/partners/UH2C_ENSEM.svg" alt="ENSEM Hassan II" class="w-full h-20 object-contain">
                                 </div>
-                                
                                 <!-- AIENSEM -->
                                 <div class="flex items-center justify-center p-6 bg-white border-2 border-nebula rounded-xl hover:border-jelly-bean hover:shadow-lg transition-all duration-300">
                                     <img src="./assets/images/partners/AIENSEM.svg" alt="AI ENSEM" class="w-full h-20 object-contain">
                                 </div>
-                                
                                 <!-- CITT -->
                                 <div class="flex items-center justify-center p-6 bg-white border-2 border-nebula rounded-xl hover:border-jelly-bean hover:shadow-lg transition-all duration-300">
                                     <img src="./assets/images/partners/UH2C_CITT.svg" alt="CITT Hassan II" class="w-full h-20 object-contain">
                                 </div>
-                                
                                 <!-- CNRST -->
                                 <div class="flex items-center justify-center p-6 bg-white border-2 border-nebula rounded-xl hover:border-jelly-bean hover:shadow-lg transition-all duration-300">
                                     <img src="./assets/images/partners/CNRST.svg" alt="CNRST" class="w-full h-20 object-contain">
                                 </div>
-                                
                                 <!-- C3S -->
                                 <div class="flex items-center justify-center p-6 bg-white border-2 border-nebula rounded-xl hover:border-jelly-bean hover:shadow-lg transition-all duration-300">
                                     <img src="./assets/images/partners/C3S.svg" alt="C3S" class="w-full h-20 object-contain">
                                 </div>
                             </div>
                         </section>
-                        
                         <!-- Call to Action -->
                         <section class="text-center pt-8 border-t border-nebula">
                             <h3 class="text-2xl font-bold text-tarawera mb-4">Devenez Partenaire</h3>
@@ -646,7 +607,6 @@
                 </div>
             </div>
         </div>
-        
         <!-- Contact Modal -->
         <div id="contactModal" class="modal">
             <div class="w-full max-w-7xl mx-auto p-8 my-8">
@@ -657,11 +617,9 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                         </svg>
                     </button>
-                    
                     <!-- Title -->
                     <h2 class="text-5xl font-bold text-tarawera mb-4 text-center">CONTACT</h2>
                     <p class="text-gray-600 text-center mb-12">Contactez-nous pour toute question concernant l'adhésion, les événements, les projets ou toute autre information.</p>
-                    
                     <!-- Contact Content -->
                     <div class="grid lg:grid-cols-5 gap-10">
                         <!-- Contact Form -->
@@ -670,27 +628,22 @@
                                 <label class="block text-sm font-semibold text-tarawera">Sujet</label>
                                 <input type="text" name="subject" class="w-full rounded-xl border-2 border-nebula focus:border-jelly-bean focus:outline-none px-4 py-3 text-sm transition-colors" placeholder="Sujet de votre message" required>
                             </div>
-                            
                             <div class="space-y-2">
                                 <label class="block text-sm font-semibold text-tarawera">Nom Complet</label>
                                 <input type="text" name="full-name" class="w-full rounded-xl border-2 border-nebula focus:border-jelly-bean focus:outline-none px-4 py-3 text-sm transition-colors" placeholder="Votre nom" required>
                             </div>
-                            
                             <div class="space-y-2">
                                 <label class="block text-sm font-semibold text-tarawera">E-mail</label>
                                 <input type="email" name="email" class="w-full rounded-xl border-2 border-nebula focus:border-jelly-bean focus:outline-none px-4 py-3 text-sm transition-colors" placeholder="nom@exemple.com" required>
                             </div>
-                            
                             <div class="space-y-2">
                                 <label class="block text-sm font-semibold text-tarawera">Université / Entreprise</label>
                                 <input type="text" name="company" class="w-full rounded-xl border-2 border-nebula focus:border-jelly-bean focus:outline-none px-4 py-3 text-sm transition-colors" placeholder="Votre affiliation" required>
                             </div>
-                            
                             <div class="space-y-2">
                                 <label class="block text-sm font-semibold text-tarawera">Votre Message</label>
                                 <textarea name="message" rows="5" class="w-full resize-y rounded-xl border-2 border-nebula focus:border-jelly-bean focus:outline-none px-4 py-3 text-sm transition-colors" placeholder="Écrivez votre message..." required></textarea>
                             </div>
-                            
                             <div class="pt-2">
                                 <button type="submit" name="send" class="inline-flex items-center gap-2 rounded-full px-8 py-3 bg-jelly-bean text-white font-semibold hover:bg-tarawera transition-all duration-300 hover:scale-105 shadow-lg">
                                     Envoyer
@@ -701,7 +654,6 @@
                                 </button>
                             </div>
                         </form>
-                        
                         <!-- Contact Info -->
                         <div class="lg:col-span-2 space-y-8">
                             <div class="glass rounded-xl p-6">
@@ -713,16 +665,14 @@
                                     Casablanca, Maroc
                                 </p>
                             </div>
-                            
                             <div class="glass rounded-xl p-6">
                                 <h3 class="text-lg font-bold text-tarawera mb-3">Email</h3>
                                 <p class="text-sm">
                                     <a href="mailto:contact@amfaim3d.ma" class="text-jelly-bean hover:text-tarawera underline decoration-dotted transition-colors">
-                                        contact@amfaim3d.ma
+                                    contact@amfaim3d.ma
                                     </a>
                                 </p>
                             </div>
-                            
                             <div class="glass rounded-xl p-6">
                                 <h3 class="text-lg font-bold text-tarawera mb-3">Suivez-nous</h3>
                                 <div class="flex space-x-4">
@@ -746,23 +696,22 @@
                                     </a>
                                 </div>
                             </div>
-                            
                             <div class="glass rounded-xl p-6">
                                 <h3 class="text-lg font-bold text-tarawera mb-3">Liens Rapides</h3>
                                 <ul class="space-y-2 text-sm text-gray-700">
                                     <li>
                                         <a href="#association" onclick="closeModal('contactModal'); setTimeout(() => openModal('associationModal'), 100); return false;" class="underline decoration-dotted hover:text-jelly-bean transition-colors">
-                                            À Propos de l'Association
+                                        À Propos de l'Association
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#evenements" onclick="closeModal('contactModal'); setTimeout(() => openModal('evenementsModal'), 100); return false;" class="underline decoration-dotted hover:text-jelly-bean transition-colors">
-                                            Évènements
+                                        Évènements
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#adhesion" class="underline decoration-dotted hover:text-jelly-bean transition-colors">
-                                            Devenir Membre
+                                        Devenir Membre
                                         </a>
                                     </li>
                                 </ul>
@@ -772,7 +721,6 @@
                 </div>
             </div>
         </div>
-        
         <!-- Modal Script -->
         <script>
             function openModal(modalId) {
@@ -818,13 +766,27 @@
                 }
                 requestAnimationFrame(updateCounter);
             }
-
+            
             document.addEventListener('DOMContentLoaded', function() {
                 document.querySelectorAll('.counter').forEach(function(counter) {
                     const target = parseInt(counter.getAttribute('data-target'), 10);
                     animateCounter(counter, target);
                 });
             });
+            
+            const toggleMenu = (force = null) => {
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('menu-icon');
+            const isOpen = !menu.classList.contains('hidden');
+            
+            const shouldOpen = force !== null ? force : !isOpen;
+            menu.classList.toggle('hidden', !shouldOpen);
+            icon.innerHTML = shouldOpen
+            ? `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>`
+            : `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>`;
+            };
+            
+            document.getElementById('menu-toggle').addEventListener('click', () => toggleMenu());
         </script>
     </body>
 </html>
