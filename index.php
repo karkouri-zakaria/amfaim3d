@@ -92,7 +92,22 @@
                 transform: rotate(180deg); /* read top-to-bottom */
                 margin: 0;
                 clip-path: polygon(50% 0, 50% 0, 100% 25%, 100% 40%, 85% 40%, 85% 50%, 100% 50%, 100% 100%, 50% 100%, 0 100%, 0 50%, 15% 50%, 15% 40%, 0% 40%, 0% 25%);
+                animation: jiggleLabel 2s infinite;
             }
+
+                @keyframes jiggleLabel {
+                    0% { transform: rotate(180deg) translateX(0); }
+                    10% { transform: rotate(180deg) translateX(-2px); }
+                    20% { transform: rotate(180deg) translateX(3px); }
+                    30% { transform: rotate(180deg) translateX(-4px); }
+                    40% { transform: rotate(180deg) translateX(2px); }
+                    50% { transform: rotate(180deg) translateX(-3px); }
+                    60% { transform: rotate(180deg) translateX(4px); }
+                    70% { transform: rotate(180deg) translateX(-2px); }
+                    80% { transform: rotate(180deg) translateX(3px); }
+                    90% { transform: rotate(180deg) translateX(-1px); }
+                    100% { transform: rotate(180deg) translateX(0); }
+                }
 
             /* Particle background effect (kept) */
             .particle { position: absolute; border-radius: 50%; background: rgba(37, 128, 167, 0.08); animation: rise 15s infinite ease-in; }
@@ -200,7 +215,7 @@
             </nav>
 
             <div class="absolute left-10 top-0 h-screen w-[4.5rem] z-50 pointer-events-auto text-tarawera flex flex-col items-center justify-between text-xl border-b-8 border-tarawera">
-                <div class="label !bg-tarawera !text-white py-3 pt-14 px-2 mb-4">News</div>
+                <div class="label !bg-tarawera !text-white py-4 pt-14 px-2 !-mt-1">News</div>
                 <div class="overflow-hidden flex items-center h-[calc(100vh-3.5rem)]" aria-hidden="false">
                     <div class="flex flex-col gap-40 animate-scrollDown" aria-hidden="false">
                         <div class="event-item">Nous avons le plaisir de vous annoncer le lancement de la nouvelle édition de la Conférence <a href="https://karkouri-zakaria.github.io/casicam/" class="font-bold">CASICAM'26 Marrakech</a>. Nous vous invitons à nous rejoindre!</div>
