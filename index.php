@@ -284,19 +284,27 @@
                 <div class="relative z-10 h-full flex items-center">
                     <div class="container mx-auto px-6 flex flex-col items-center text-center">
                         <div class="flex-shrink-0 flex items-center justify-center h-1/2 fade-in-up delay-100">
-                            <img src="./assets/images/logo.png" alt="AMFAIM3D Logo" class="w-auto float drop-shadow-2xl animate-float" style="min-width: 12rem;">
+                            <img src="./assets/images/logo.png" alt="AMFAIM3D Logo" class="w-auto drop-shadow-2xl" style="max-width: 38vh;">
                         </div>
-                        <h2 class="text-2xl font-light text-black mb-4 fade-in-up delay-200">
-                            Association Marocaine de
-                        </h2>
-                        <h2 class="text-2xl font-light text-black mb-6 fade-in-up delay-300">
-                            Fabrication Additive et d'Impression 3D
-                        </h2>
-                        <p class="text-lg text-gray-700 font-medium leading-relaxed mb-6 max-w-md fade-in-up delay-400">
+                        <p class="text-lg text-gray-700 font-medium leading-relaxed mb-2 max-w-md fade-in-up delay-400">
                             Pionniers de l'innovation technologique au Maroc, nous façonnons l'avenir de la fabrication additive 
                             et de l'impression 3D à travers la recherche, l'éducation et la collaboration.
                         </p>
-                        <div class="flex space-x-4 fade-in-up delay-400">
+                        <div class="grid grid-cols-3 gap-8 max-w-2xl fade-in-up delay-400">
+                            <div class="glass rounded-xl p-1 backdrop-blur-md">
+                                <div class="text-4xl font-bold text-jelly-bean mb-2 counter" data-target="100">0+</div>
+                                <div class="text-sm text-mine-shaft/70 font-light">Membres Actifs</div>
+                            </div>
+                            <div class="glass rounded-xl p-1 backdrop-blur-md">
+                                <div class="text-4xl font-bold text-jelly-bean mb-2 counter" data-target="15">0+</div>
+                                <div class="text-sm text-mine-shaft/70 font-light">Projets Réalisés</div>
+                            </div>
+                            <div class="glass rounded-xl p-1 backdrop-blur-md">
+                                <div class="text-4xl font-bold text-jelly-bean mb-2 counter" data-target="8">0+</div>
+                                <div class="text-sm text-mine-shaft/70 font-light">Partenaires</div>
+                            </div>
+                        </div>
+                        <div class="flex space-x-4 fade-in-up delay-400 mt-4">
                             <a href="#contact" onclick="document.querySelector('input[name=subject]').value='Inscription 2026'; openModal('contactModal'); return false;" class="group relative px-6 py-3 bg-jelly-bean text-white font-semibold rounded-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl">
                                 <span class="relative z-10">Devenir Membre</span>
                                 <div class="absolute inset-0 bg-tarawera transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
