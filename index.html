@@ -170,6 +170,22 @@
                     </a>
                 </div>
             </nav>
+            <div class="absolute left-10 top-0 h-screen w-[4.5rem] z-50 pointer-events-auto text-tarawera flex flex-col items-center justify-between text-xl border-b-8 border-tarawera">
+                <div class="label !bg-tarawera !text-white py-3 pt-14 px-2 mb-4">News</div>
+                <div class="overflow-hidden flex items-center h-[calc(100vh-3.5rem)]" aria-hidden="false">
+                    <div class="flex flex-col gap-40 animate-scrollDown" aria-hidden="false">
+                        <div class="event-item">Nous avons le plaisir de vous annoncer le lancement de la nouvelle édition de la Conférence <a href="https://karkouri-zakaria.github.io/casicam/" class="font-bold">CASICAM'26 Marrakech</a>. Nous vous invitons à nous rejoindre!</div>
+                        <div class="event-item">Nous avons le plaisir de vous annoncer le lancement de la nouvelle édition de la Conférence <a href="https://karkouri-zakaria.github.io/casicam/" class="font-bold">CASICAM'26 Marrakech</a>. Nous vous invitons à nous rejoindre!</div>
+                        <div class="event-item">Nous avons le plaisir de vous annoncer le lancement de la nouvelle édition de la Conférence <a href="https://karkouri-zakaria.github.io/casicam/" class="font-bold">CASICAM'26 Marrakech</a>. Nous vous invitons à nous rejoindre!</div>
+                        <div class="event-item">Nous avons le plaisir de vous annoncer le lancement de la nouvelle édition de la Conférence <a href="https://karkouri-zakaria.github.io/casicam/" class="font-bold">CASICAM'26 Marrakech</a>. Nous vous invitons à nous rejoindre!</div>
+                        <!-- duplicate for smooth loop -->
+                        <div class="event-item">Nous avons le plaisir de vous annoncer le lancement de la nouvelle édition de la Conférence <a href="https://karkouri-zakaria.github.io/casicam/" class="font-bold">CASICAM'26 Marrakech</a>. Nous vous invitons à nous rejoindre!</div>
+                        <div class="event-item">Nous avons le plaisir de vous annoncer le lancement de la nouvelle édition de la Conférence <a href="https://karkouri-zakaria.github.io/casicam/" class="font-bold">CASICAM'26 Marrakech</a>. Nous vous invitons à nous rejoindre!</div>
+                        <div class="event-item">Nous avons le plaisir de vous annoncer le lancement de la nouvelle édition de la Conférence <a href="https://karkouri-zakaria.github.io/casicam/" class="font-bold">CASICAM'26 Marrakech</a>. Nous vous invitons à nous rejoindre!</div>
+                        <div class="event-item">Nous avons le plaisir de vous annoncer le lancement de la nouvelle édition de la Conférence <a href="https://karkouri-zakaria.github.io/casicam/" class="font-bold">CASICAM'26 Marrakech</a>. Nous vous invitons à nous rejoindre!</div>
+                    </div>
+                </div>
+            </div>
             <!-- Main Content - Hero Flex Layout -->
             <div class="relative z-10 h-full flex items-center">
                 <div class="container mx-auto px-20 max-w-9xl flex flex-col xl:flex-row items-center justify-between w-full">
