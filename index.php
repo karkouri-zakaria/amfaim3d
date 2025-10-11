@@ -123,7 +123,7 @@
             @keyframes slideUp { from { transform: translateY(30px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
         </style>
     </head>
-    <body class="font-saira min-h-screen xl:overflow-hidden">
+    <body class="font-saira min-h-screen overflow-hidden">
         <!-- Hero Section -->
         <main class="hidden xl:block relative w-full h-screen gradient-animate overflow-hidden">
             <!-- Right-half background image with inclined split -->
@@ -260,7 +260,7 @@
                 </div>
             </div>
             <div class="absolute left-1 bottom-0 h-screen w-[4.5rem] z-30 pointer-events-auto text-tarawera flex flex-col items-center justify-between text-xl border-b-8 border-tarawera">
-                <div class="label !bg-tarawera !text-white py-4 pt-14 px-2 !-mt-1">News</div>
+                <div class="label !bg-tarawera !text-white py-4 pt-14 px-2">News</div>
                 <div class="overflow-hidden flex items-center h-[calc(100vh-3.5rem)]" aria-hidden="false">
                     <div class="flex flex-col gap-40 animate-scrollDown" aria-hidden="false">
                         <div class="event-item">Nous avons le plaisir de vous annoncer le lancement de la nouvelle édition de la Conférence <a href="https://karkouri-zakaria.github.io/casicam/" class="font-bold">CASICAM'26 Marrakech</a>. Nous vous invitons à nous rejoindre!</div>
