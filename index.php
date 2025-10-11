@@ -123,9 +123,9 @@
             @keyframes slideUp { from { transform: translateY(30px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
         </style>
     </head>
-    <body class="font-saira min-h-screen overflow-hidden">
+    <body class="font-saira min-h-screen xl:overflow-hidden">
         <!-- Hero Section -->
-        <main class="relative w-full h-screen gradient-animate overflow-hidden">
+        <main class="hidden xl:block relative w-full h-screen gradient-animate overflow-hidden">
             <!-- Right-half background image with inclined split -->
             <div class="absolute top-0 -left-60 h-full w-2/3 z-0" style="background: url('./assets/images/bg.png') center center/cover no-repeat; clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);"></div>
             <div class="absolute top-0 -left-60 h-full w-2/3 z-10 pointer-events-none bg-nebula opacity-85" style="clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);"></div>
@@ -170,44 +170,6 @@
                     </a>
                 </div>
             </nav>
-            <!-- Mobile Hamburger -->
-            <div class="absolute top-6 right-6 z-50 md:hidden">
-                <button id="menu-toggle" class="text-tarawera focus:outline-none">
-                    <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
-                </button>
-            </div>
-            <!-- Mobile Menu Panel -->
-            <div id="mobile-menu" class="fixed inset-x-0 top-0 bg-white/90 backdrop-blur-md shadow-lg text-tarawera hidden flex-col items-center py-8 space-y-6 text-lg font-light z-40">
-                <a href="#association" onclick="openModal('associationModal'); toggleMenu(false); return false;" class="hover:text-jelly-bean">Association</a>
-                <a href="#evenements" onclick="openModal('evenementsModal'); toggleMenu(false); return false;" class="hover:text-jelly-bean">Évènements</a>
-                <a href="#projets" onclick="toggleMenu(false)" class="hover:text-jelly-bean">Projets</a>
-                <a href="#publications" onclick="toggleMenu(false)" class="hover:text-jelly-bean">Publications</a>
-                <a href="#sponsors" onclick="openModal('sponsorsModal'); toggleMenu(false); return false;" class="hover:text-jelly-bean">Sponsors</a>
-                <a href="#contact" onclick="openModal('contactModal'); toggleMenu(false); return false;" class="hover:text-jelly-bean">Contact</a>
-                <div class="flex space-x-6 pt-4">
-                    <a href="https://www.facebook.com/AMFAIM3D" target="_blank" class="text-tarawera/50 hover:text-jelly-bean transition"><i class="fab fa-facebook text-xl"></i></a>
-                    <a href="#" class="text-tarawera/50 hover:text-jelly-bean transition"><i class="fab fa-instagram text-xl"></i></a>
-                    <a href="#" class="text-tarawera/50 hover:text-jelly-bean transition"><i class="fab fa-linkedin text-xl"></i></a>
-                </div>
-            </div>
-            <div class="absolute left-10 top-0 h-screen w-[4.5rem] z-50 pointer-events-auto text-tarawera flex flex-col items-center justify-between text-xl border-b-8 border-tarawera">
-                <div class="label !bg-tarawera !text-white py-4 pt-14 px-2 !-mt-1">News</div>
-                <div class="overflow-hidden flex items-center h-[calc(100vh-3.5rem)]" aria-hidden="false">
-                    <div class="flex flex-col gap-40 animate-scrollDown" aria-hidden="false">
-                        <div class="event-item">Nous avons le plaisir de vous annoncer le lancement de la nouvelle édition de la Conférence <a href="https://karkouri-zakaria.github.io/casicam/" class="font-bold">CASICAM'26 Marrakech</a>. Nous vous invitons à nous rejoindre!</div>
-                        <div class="event-item">Nous avons le plaisir de vous annoncer le lancement de la nouvelle édition de la Conférence <a href="https://karkouri-zakaria.github.io/casicam/" class="font-bold">CASICAM'26 Marrakech</a>. Nous vous invitons à nous rejoindre!</div>
-                        <div class="event-item">Nous avons le plaisir de vous annoncer le lancement de la nouvelle édition de la Conférence <a href="https://karkouri-zakaria.github.io/casicam/" class="font-bold">CASICAM'26 Marrakech</a>. Nous vous invitons à nous rejoindre!</div>
-                        <div class="event-item">Nous avons le plaisir de vous annoncer le lancement de la nouvelle édition de la Conférence <a href="https://karkouri-zakaria.github.io/casicam/" class="font-bold">CASICAM'26 Marrakech</a>. Nous vous invitons à nous rejoindre!</div>
-                        <!-- duplicate for smooth loop -->
-                        <div class="event-item">Nous avons le plaisir de vous annoncer le lancement de la nouvelle édition de la Conférence <a href="https://karkouri-zakaria.github.io/casicam/" class="font-bold">CASICAM'26 Marrakech</a>. Nous vous invitons à nous rejoindre!</div>
-                        <div class="event-item">Nous avons le plaisir de vous annoncer le lancement de la nouvelle édition de la Conférence <a href="https://karkouri-zakaria.github.io/casicam/" class="font-bold">CASICAM'26 Marrakech</a>. Nous vous invitons à nous rejoindre!</div>
-                        <div class="event-item">Nous avons le plaisir de vous annoncer le lancement de la nouvelle édition de la Conférence <a href="https://karkouri-zakaria.github.io/casicam/" class="font-bold">CASICAM'26 Marrakech</a>. Nous vous invitons à nous rejoindre!</div>
-                        <div class="event-item">Nous avons le plaisir de vous annoncer le lancement de la nouvelle édition de la Conférence <a href="https://karkouri-zakaria.github.io/casicam/" class="font-bold">CASICAM'26 Marrakech</a>. Nous vous invitons à nous rejoindre!</div>
-                    </div>
-                </div>
-            </div>
             <!-- Main Content - Hero Flex Layout -->
             <div class="relative z-10 h-full flex items-center">
                 <div class="container mx-auto px-20 max-w-9xl flex flex-col xl:flex-row items-center justify-between w-full">
@@ -267,6 +229,84 @@
                     <input type="email" name="newsletter-email" required placeholder="E-mail *" class="flex-1 rounded-lg border-2 px-4 py-1 text-sm focus:outline-none focus:border-jelly-bean focus:shadow-2xl bg-transparent border-tarawera" />
                     <button type="submit" class="bg-jelly-bean text-white font-semibold rounded-lg px-6 py-1 hover:bg-tarawera transition-all duration-300">S'inscrire</button>
                 </form>
+            </div>
+        </main>
+        <!-- Mobile Hero Section -->
+        <main>
+            <!-- Mobile Hamburger -->
+            <div class="absolute top-6 right-6 z-50 md:hidden">
+                <button id="menu-toggle" class="text-tarawera focus:outline-none">
+                    <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+            <!-- Mobile Menu Panel -->
+            <div id="mobile-menu" class="fixed inset-x-0 top-0 bg-white/90 backdrop-blur-md shadow-lg text-tarawera hidden flex-col items-center py-8 space-y-6 text-lg font-light z-40">
+                <a href="#association" onclick="openModal('associationModal'); toggleMenu(false); return false;" class="hover:text-jelly-bean">Association</a>
+                <a href="#evenements" onclick="openModal('evenementsModal'); toggleMenu(false); return false;" class="hover:text-jelly-bean">Évènements</a>
+                <a href="#projets" onclick="toggleMenu(false)" class="hover:text-jelly-bean">Projets</a>
+                <a href="#publications" onclick="toggleMenu(false)" class="hover:text-jelly-bean">Publications</a>
+                <a href="#sponsors" onclick="openModal('sponsorsModal'); toggleMenu(false); return false;" class="hover:text-jelly-bean">Sponsors</a>
+                <a href="#contact" onclick="openModal('contactModal'); toggleMenu(false); return false;" class="hover:text-jelly-bean">Contact</a>
+                <div class="w-full flex items-center justify-center z-40">
+                    <form class="flex flex-col md:flex-row items-center gap-0 w-full max-w-5xl px-4 bg-white bg-opacity-10" action="#" method="POST">
+                        <label class="font-bold text-tarawera text-lg">Newsletter:</label>
+                        <div class="flex items-centerw-full justify-evenly gap-2">
+                            <input type="email" name="newsletter-email" required placeholder="E-mail *" class="flex-1 rounded-lg border-2 px-4 py-1 text-sm focus:outline-none focus:border-jelly-bean focus:shadow-2xl bg-transparent border-tarawera" />
+                            <button type="submit" class="bg-jelly-bean text-white font-medium rounded-lg px-1 py-1 hover:bg-tarawera transition-all duration-300">S'inscrire</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="absolute left-1 bottom-0 h-screen w-[4.5rem] z-30 pointer-events-auto text-tarawera flex flex-col items-center justify-between text-xl border-b-8 border-tarawera">
+                <div class="label !bg-tarawera !text-white py-4 pt-14 px-2 !-mt-1">News</div>
+                <div class="overflow-hidden flex items-center h-[calc(100vh-3.5rem)]" aria-hidden="false">
+                    <div class="flex flex-col gap-40 animate-scrollDown" aria-hidden="false">
+                        <div class="event-item">Nous avons le plaisir de vous annoncer le lancement de la nouvelle édition de la Conférence <a href="https://karkouri-zakaria.github.io/casicam/" class="font-bold">CASICAM'26 Marrakech</a>. Nous vous invitons à nous rejoindre!</div>
+                        <div class="event-item">Nous avons le plaisir de vous annoncer le lancement de la nouvelle édition de la Conférence <a href="https://karkouri-zakaria.github.io/casicam/" class="font-bold">CASICAM'26 Marrakech</a>. Nous vous invitons à nous rejoindre!</div>
+                        <div class="event-item">Nous avons le plaisir de vous annoncer le lancement de la nouvelle édition de la Conférence <a href="https://karkouri-zakaria.github.io/casicam/" class="font-bold">CASICAM'26 Marrakech</a>. Nous vous invitons à nous rejoindre!</div>
+                        <div class="event-item">Nous avons le plaisir de vous annoncer le lancement de la nouvelle édition de la Conférence <a href="https://karkouri-zakaria.github.io/casicam/" class="font-bold">CASICAM'26 Marrakech</a>. Nous vous invitons à nous rejoindre!</div>
+                        <!-- duplicate for smooth loop -->
+                        <div class="event-item">Nous avons le plaisir de vous annoncer le lancement de la nouvelle édition de la Conférence <a href="https://karkouri-zakaria.github.io/casicam/" class="font-bold">CASICAM'26 Marrakech</a>. Nous vous invitons à nous rejoindre!</div>
+                        <div class="event-item">Nous avons le plaisir de vous annoncer le lancement de la nouvelle édition de la Conférence <a href="https://karkouri-zakaria.github.io/casicam/" class="font-bold">CASICAM'26 Marrakech</a>. Nous vous invitons à nous rejoindre!</div>
+                        <div class="event-item">Nous avons le plaisir de vous annoncer le lancement de la nouvelle édition de la Conférence <a href="https://karkouri-zakaria.github.io/casicam/" class="font-bold">CASICAM'26 Marrakech</a>. Nous vous invitons à nous rejoindre!</div>
+                        <div class="event-item">Nous avons le plaisir de vous annoncer le lancement de la nouvelle édition de la Conférence <a href="https://karkouri-zakaria.github.io/casicam/" class="font-bold">CASICAM'26 Marrakech</a>. Nous vous invitons à nous rejoindre!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="relative w-full h-screen gradient-animate pl-12">
+                <!-- Background Image -->
+                <div class="absolute inset-0 h-full w-full z-0" style="background: url('./assets/images/bg.png') center center/cover no-repeat;"></div>
+                <div class="absolute inset-0 h-full w-full z-0 bg-nebula opacity-85"></div>
+
+                <!-- Content on Top -->
+                <div class="relative z-10 h-full flex items-center">
+                    <div class="container mx-auto px-6 flex flex-col items-center text-center">
+                        <div class="flex-shrink-0 flex items-center justify-center h-1/2 fade-in-up delay-100">
+                            <img src="./assets/images/logo.png" alt="AMFAIM3D Logo" class="w-auto float drop-shadow-2xl animate-float" style="min-width: 12rem;">
+                        </div>
+                        <h2 class="text-2xl font-light text-black mb-4 fade-in-up delay-200">
+                            Association Marocaine de
+                        </h2>
+                        <h2 class="text-2xl font-light text-black mb-6 fade-in-up delay-300">
+                            Fabrication Additive et d'Impression 3D
+                        </h2>
+                        <p class="text-lg text-gray-700 font-medium leading-relaxed mb-6 max-w-md fade-in-up delay-400">
+                            Pionniers de l'innovation technologique au Maroc, nous façonnons l'avenir de la fabrication additive 
+                            et de l'impression 3D à travers la recherche, l'éducation et la collaboration.
+                        </p>
+                        <div class="flex space-x-4 fade-in-up delay-400">
+                            <a href="#contact" onclick="document.querySelector('input[name=subject]').value='Inscription 2026'; openModal('contactModal'); return false;" class="group relative px-6 py-3 bg-jelly-bean text-white font-semibold rounded-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                                <span class="relative z-10">Devenir Membre</span>
+                                <div class="absolute inset-0 bg-tarawera transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
+                            </a>
+                            <a href="#association" onclick="openModal('associationModal'); return false;" class="group px-6 py-3 border-2 border-jelly-bean text-jelly-bean font-semibold rounded-lg transition-all duration-300 hover:bg-jelly-bean hover:text-white hover:scale-105 hover:shadow-2xl">
+                                En Savoir Plus
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
         <!-- Association Modal -->
@@ -747,6 +787,8 @@
                         closeModal(modal.id);
                     });
                 }
+           
+           
             });
             
             // Counter effect for stats
@@ -775,16 +817,25 @@
             });
             
             const toggleMenu = (force = null) => {
-            const menu = document.getElementById('mobile-menu');
-            const icon = document.getElementById('menu-icon');
-            const isOpen = !menu.classList.contains('hidden');
-            
-            const shouldOpen = force !== null ? force : !isOpen;
-            menu.classList.toggle('hidden', !shouldOpen);
-            icon.innerHTML = shouldOpen
-            ? `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>`
-            : `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>`;
-            };
+                const menu = document.getElementById('mobile-menu');
+                const icon = document.getElementById('menu-icon');
+                const isOpen = menu.classList.contains('flex');
+
+                const shouldOpen = force !== null ? force : !isOpen;
+
+                if (shouldOpen) {
+                    menu.classList.remove('hidden');
+                    menu.classList.add('flex'); // ✅ ensures flex layout
+                } else {
+                    menu.classList.remove('flex');
+                    menu.classList.add('hidden');
+                }
+
+                icon.innerHTML = shouldOpen
+                    ? `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>`
+                    : `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>`;
+                };
+
             
             document.getElementById('menu-toggle').addEventListener('click', () => toggleMenu());
         </script>
