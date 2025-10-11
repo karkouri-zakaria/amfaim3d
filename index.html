@@ -232,9 +232,9 @@
             </div>
         </main>
         <!-- Mobile Hero Section -->
-        <main>
+        <main class="h-screen w-full bg-white relative xl:hidden">
             <!-- Mobile Hamburger -->
-            <div class="absolute top-6 right-6 z-50 md:hidden">
+            <div class="absolute top-6 right-6 z-50">
                 <button id="menu-toggle" class="text-tarawera focus:outline-none">
                     <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
