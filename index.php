@@ -284,7 +284,7 @@
                 <div class="relative z-10 h-full flex items-center">
                     <div class="container mx-auto px-6 flex flex-col items-center text-center">
                         <div class="flex-shrink-0 flex items-center justify-center h-1/2 fade-in-up delay-100">
-                            <img src="./assets/images/logo.png" alt="AMFAIM3D Logo" class="w-auto drop-shadow-2xl" style="max-width: 36vh;">
+                            <img src="./assets/images/logo.png" alt="AMFAIM3D Logo" class="w-auto drop-shadow-2xl" style="max-width: 32vh;">
                         </div>
                         <p class="text-lg text-gray-700 font-medium leading-relaxed mb-2 max-w-md fade-in-up delay-400">
                             Pionniers de l'innovation technologique au Maroc, nous façonnons l'avenir de la fabrication additive 
