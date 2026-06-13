@@ -129,8 +129,8 @@
 			<ul class="flex flex-col space-y-6 text-tarawera items-end">
 				<li><a href="#association" onclick="openModal('associationModal'); return false;" class="nav-link text-lg font-light tracking-wide hover:text-jelly-bean transition-all duration-300">Association</a></li>
 				<li><a href="#evenements" onclick="openModal('evenementsModal'); return false;" class="nav-link text-lg font-light tracking-wide hover:text-jelly-bean transition-all duration-300">Évènements</a></li>
-				<li><a href="#projets" class="nav-link text-lg font-light tracking-wide hover:text-jelly-bean transition-all duration-300">Projets</a></li>
-				<li><a href="#publications" class="nav-link text-lg font-light tracking-wide hover:text-jelly-bean transition-all duration-300">Publications</a></li>
+				<li><a href="#projets" onclick="openModal('projetsModal'); return false;" class="nav-link text-lg font-light tracking-wide hover:text-jelly-bean transition-all duration-300">Projets</a></li>
+				<li><a href="#publications" onclick="openModal('publicationsModal'); return false;" class="nav-link text-lg font-light tracking-wide hover:text-jelly-bean transition-all duration-300">Publications</a></li>
 				<li><a href="#sponsors" onclick="openModal('sponsorsModal'); return false;" class="nav-link text-lg font-light tracking-wide hover:text-jelly-bean transition-all duration-300">Sponsors</a></li>
 				<li><a href="#contact" onclick="openModal('contactModal'); return false;" class="nav-link text-lg font-light tracking-wide hover:text-jelly-bean transition-all duration-300">Contact</a></li>
 			</ul>
@@ -165,8 +165,8 @@
 		<div id="mobile-menu" class="fixed inset-x-0 top-0 bg-white/90 backdrop-blur-md shadow-lg text-tarawera hidden flex-col items-center py-8 space-y-6 text-lg font-light z-40">
 			<a href="#association" onclick="openModal('associationModal'); toggleMenu(false); return false;" class="hover:text-jelly-bean">Association</a>
 			<a href="#evenements" onclick="openModal('evenementsModal'); toggleMenu(false); return false;" class="hover:text-jelly-bean">Évènements</a>
-			<a href="#projets" onclick="toggleMenu(false)" class="hover:text-jelly-bean">Projets</a>
-			<a href="#publications" onclick="toggleMenu(false)" class="hover:text-jelly-bean">Publications</a>
+			<a href="#projets" onclick="openModal('projetsModal'); toggleMenu(false); return false;" class="hover:text-jelly-bean">Projets</a>
+			<a href="#publications" onclick="openModal('publicationsModal'); toggleMenu(false); return false;" class="hover:text-jelly-bean">Publications</a>
 			<a href="#sponsors" onclick="openModal('sponsorsModal'); toggleMenu(false); return false;" class="hover:text-jelly-bean">Sponsors</a>
 			<a href="#contact" onclick="openModal('contactModal'); toggleMenu(false); return false;" class="hover:text-jelly-bean">Contact</a>
 			<div class="w-full flex items-center justify-center z-40">
