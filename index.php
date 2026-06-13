@@ -140,44 +140,32 @@
                         </div>
                     </div>
                 </div>
-                <!--second section: A Word of the Co-Presidents-->
-                <div class="bg-peach w-4/5 py-6 px-4 mt-14 md:px-8 rounded-3xl flex items-center">
-                    <div class="mx-auto">
-                        <h2 class="text-5xl md:text-6xl text-tarawera mt-8 mb-2">MOT DU PRÉSIDENT</h2>
-                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                            <!-- Left: Text Content -->
-                            <div class="space-y-6 text-justify">
-                                <p class="text-gray-800 text-base leading-relaxed">
-                                    La discipline de la fabrication additive et de l’impression 3D commence à bousculer le monde de la fabrication au point d’être qualifié par une nouvelle révolution industrielle.
+                <!--second section: A Word of the President-->
+                <div class="bg-peach w-4/5 py-10 px-8 mt-14 md:px-12 rounded-3xl flex items-center relative shadow-sm border border-white/50">
+                    <div class="mx-auto relative z-10 w-full">
+                        <!-- Decorative Quote Icon -->
+                        <svg class="absolute -top-4 -left-6 w-16 h-16 text-tarawera/10 transform -scale-x-100" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+                            <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
+                        </svg>
+                        <h2 class="text-3xl md:text-4xl text-tarawera mb-8 text-center font-medium tracking-tight">MOT DU PRÉSIDENT</h2>
+                        <div class="flex flex-col justify-center items-center">
+                            <div class="space-y-3 text-justify text-gray-800 text-lg leading-relaxed font-light">
+                                <p>
+                                    La discipline de la fabrication additive et de l’impression 3D commence à bousculer le monde de la fabrication au point d’être qualifiée de nouvelle révolution industrielle.
                                 </p>
-                                <p class="text-gray-800 text-base leading-relaxed">
-                                    Conscient de l’intérêt immense de cette discipline pour notre pays, un groupe de scientifique et d’industriels ont entrepris la création de L’Association Marocaine de Fabrication Additive et d’Impression 3D» (AMFAIM3D).
+                                <p>
+                                    Conscients de l’intérêt immense de cette discipline pour notre pays, un groupe de scientifiques et d’industriels a entrepris la création de l'Association Marocaine de Fabrication Additive et d’Impression 3D (AMFAIM3D).
                                 </p>
-                                <p class="text-gray-800 text-base leading-relaxed">
-                                    Deux mots d’ordre nous animent dans cette action : la maitrise de la discipline pour servir le monde socioéconomique national, et le rayonnement au niveau du grand public pour préparer les futurs acteurs de la discipline.
+                                <p>
+                                    Deux mots d’ordre nous animent dans cette action : la maîtrise de la discipline pour servir le monde socioéconomique national, et le rayonnement au niveau du grand public pour préparer les futurs acteurs de la discipline.
                                 </p>
-                                <p class="text-gray-800 text-base leading-relaxed">
-                                    Et dans cet esprit d’ouverture aux autres disciplines scientifiques et de collaboration avec les acteurs nationaux et internationaux que nous entamons nos actions pour assurer notre mission et atteindre nos objectifs.
+                                <p>
+                                    C'est dans cet esprit d’ouverture aux autres disciplines scientifiques et de collaboration avec les acteurs nationaux et internationaux que nous entamons nos actions pour assurer notre mission et atteindre nos objectifs.
                                 </p>
                             </div>
-                            <!-- Right: Co-Presidents -->
-                            <div class="flex lg:flex-col xl:flex-row justify-center gap-8">
-                                <!-- President 1 -->
-                                <div class="flex flex-col items-center">
-                                    <div class="w-80 h-80 rounded-full overflow-hidden mb-4">
-                                        <img src="./assets/images/staff/Zarbane.jpg" alt="Prof. Zarbane" class="w-full h-full object-contain">
-                                    </div>
-                                    <h3 class="text-lg font-semibold text-gray-800">Pr. Khalid Zarbane</h3>
-                                    <h3 class="text-md text-gray-500">Président</h3>
-                                </div>
-                                <!-- President 2 -->
-                                <div class="flex flex-col items-center">
-                                    <div class="w-80 h-80 rounded-full overflow-hidden mb-4 ">
-                                        <img src="./assets/images/staff/Beidouri.jpg" alt="Prof. Beidouri" class="w-full h-full object-contain">
-                                    </div>
-                                    <h3 class="text-lg font-semibold text-gray-800">Pr. Zitouni Beidouri</h3>
-                                    <h3 class="text-md text-gray-500">Vice Président</h3>
-                                </div>
+                            <div class="mt-8 text-center sm:text-right w-full">
+                                <p class="text-tarawera font-bold text-lg">Pr. Khalid Zarbane</p>
+                                <p class="text-blue-600 text-xs font-medium tracking-wide">Président de l'AMFAIM3D</p>
                             </div>
                         </div>
                     </div>
@@ -277,6 +265,24 @@
                         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6   gap-4 mb-4">
                             <div class="bg-white w-52 rounded-2xl overflow-hidden shadow-lg flex flex-col hover:shadow-xl transition-shadow border border-gray-100">
                                 <div class="aspect-square w-full overflow-hidden">
+                                    <img src="./assets/images/staff/Zarbane.jpg" alt="Prof. Zarbane" class="w-full h-full object-cover">
+                                </div>
+                                <div class="p-5 flex flex-col items-center text-center">
+                                    <h3 class="text-md font-bold text-tarawera leading-tight">Pr. Khalid Zarbane</h3>
+                                    <span class="text-blue-600 font-medium text-xs mb-3">Président</span>
+                                </div>
+                            </div>
+                            <div class="bg-white w-52 rounded-2xl overflow-hidden shadow-lg flex flex-col hover:shadow-xl transition-shadow border border-gray-100">
+                                <div class="aspect-square w-full overflow-hidden">
+                                    <img src="./assets/images/staff/Beidouri.jpg" alt="Prof. Beidouri" class="w-full h-full object-cover">
+                                </div>
+                                <div class="p-5 flex flex-col items-center text-center">
+                                    <h3 class="text-md font-bold text-tarawera leading-tight">Pr. Ahmed Beidouri</h3>
+                                    <span class="text-blue-600 font-medium text-xs mb-3">Vice-Président</span>                          
+                                </div>
+                            </div>
+                            <div class="bg-white w-52 rounded-2xl overflow-hidden shadow-lg flex flex-col hover:shadow-xl transition-shadow border border-gray-100">
+                                <div class="aspect-square w-full overflow-hidden">
                                     <img src="./assets/images/staff/Kiass.jpg" alt="Elmehdi Kiass   " class="w-full h-full object-cover">
                                 </div>
                                 <div class="p-5 flex flex-col items-center text-center">
@@ -299,7 +305,7 @@
                                 </div>
                                 <div class="p-5 flex flex-col items-center text-center">
                                     <h3 class="text-md font-bold text-tarawera leading-tight">Pr. Mohamed Eloumami</h3>
-                                    <span class="text-blue-600 font-medium text-xs mb-3">conseiller</span>                           
+                                    <span class="text-blue-600 font-medium text-xs mb-3">Conseiller</span>                           
                                 </div>
                             </div>
                         </div>
@@ -431,45 +437,33 @@
                         </div>
                     </div>
                 </div>
-                <!--second section: A Word of the Co-Presidents-->
-                <div class="bg-peach w-full sm:w-4/5 py-6 px-4 mt-14 md:px-8 rounded-3xl my-6">
-                    <div class="mx-auto">
-                        <h2 class="text-3xl sm:text-5xl md:text-6xl text-tarawera mt-4 mb-4 text-center">MOT DU PRÉSIDENT</h2>
-                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                            <!-- Right: Co-Presidents -->
-                            <div class="flex flex-row justify-center items-center gap-6 sm:gap-8">
-                                <!-- President 1 -->
-                                <div class="flex flex-col items-center">
-                                    <div class="w-40 h-40 sm:w-56 sm:h-56 md:w-80 md:h-80 rounded-full overflow-hidden mb-3 mx-auto">
-                                        <img src="./assets/images/staff/Zarbane.jpg" alt="Prof. Zarbane" class="w-full h-full object-contain lg:object-cover">
-                                    </div>
-                                    <h3 class="text-md sm:text-lg font-semibold text-gray-800 text-center">Pr. Khalid Zarbane</h3>
-                                    <h3 class="text-sm text-gray-500 text-center">Président</h3>
-                                </div>
-                                <!-- President 2 -->
-                                <div class="flex flex-col items-center">
-                                    <div class="w-40 h-40 sm:w-56 sm:h-56 md:w-80 md:h-80 rounded-full overflow-hidden mb-3 mx-auto">
-                                        <img src="./assets/images/staff/Beidouri.jpg" alt="Prof. Beidouri" class="w-full h-full object-contain lg:object-cover">
-                                    </div>
-                                    <h3 class="text-md sm:text-lg font-semibold text-gray-800 text-center">Pr. Zitouni Beidouri</h3>
-                                    <h3 class="text-sm text-gray-500 text-center">Vice Président</h3>
-                                </div>
+                <!--second section: A Word of the President-->
+                <div class="bg-peach w-full sm:w-4/5 py-8 px-6 mt-14 md:px-8 rounded-3xl my-6 relative shadow-sm border border-white/50 mx-auto">
+                    <div class="mx-auto relative z-10">
+                        <!-- Decorative Quote Icon -->
+                        <svg class="absolute -top-3 -left-2 w-12 h-12 text-tarawera/10 transform -scale-x-100" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+                            <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
+                        </svg>
+                        <h2 class="text-3xl sm:text-5xl md:text-6xl text-tarawera mt-2 mb-6 text-center font-medium tracking-tight">MOT DU PRÉSIDENT</h2>
+                        <div class="flex flex-col justify-center items-center">
+                            <div class="space-y-4 text-justify text-gray-800 text-sm sm:text-base leading-relaxed font-light">
+                                <p>
+                                    La discipline de la fabrication additive et de l’impression 3D commence à bousculer le monde de la fabrication au point d’être qualifiée de nouvelle révolution industrielle.
+                                </p>
+                                <p>
+                                    Conscients de l’intérêt immense de cette discipline pour notre pays, un groupe de scientifiques et d’industriels a entrepris la création de l'Association Marocaine de Fabrication Additive et d’Impression 3D (AMFAIM3D).
+                                </p>
+                                <p>
+                                    Deux mots d’ordre nous animent dans cette action : la maîtrise de la discipline pour servir le monde socioéconomique national, et le rayonnement au niveau du grand public pour préparer les futurs acteurs de la discipline.
+                                </p>
+                                <p>
+                                    C'est dans cet esprit d’ouverture aux autres disciplines scientifiques et de collaboration avec les acteurs nationaux et internationaux que nous entamons nos actions pour assurer notre mission et atteindre nos objectifs.
+                                </p>
                             </div>
-                            <!-- Left: Text Content -->
-                            <div class="space-y-4 text-justify">
-                                <p class="text-gray-800 text-xs sm:text-base leading-relaxed text-left">
-                                    La discipline de la fabrication additive et de l’impression 3D commence à bousculer le monde de la fabrication au point d’être qualifié par une nouvelle révolution industrielle.
-                                </p>
-                                <p class="text-gray-800 text-xs sm:text-base leading-relaxed text-left">
-                                    Conscient de l’intérêt immense de cette discipline pour notre pays, un groupe de scientifique et d’industriels ont entrepris la création de L’Association Marocaine de Fabrication Additive et d’Impression 3D» (AMFAIM3D).
-                                </p>
-                                <p class="text-gray-800 text-xs sm:text-base leading-relaxed text-left">
-                                    Deux mots d’ordre nous animent dans cette action : la maitrise de la discipline pour servir le monde socioéconomique national, et le rayonnement au niveau du grand public pour préparer les futurs acteurs de la discipline.
-                                </p>
-                                <p class="text-gray-800 text-xs sm:text-base leading-relaxed text-left">
-                                    Et dans cet esprit d’ouverture aux autres disciplines scientifiques et de collaboration avec les acteurs nationaux et internationaux que nous entamons nos actions pour assurer notre mission et atteindre nos objectifs.
-                                </p>
-                            </div>                            
+                            <div class="mt-6 text-right w-full">
+                                <p class="text-tarawera font-semibold text-sm">Pr. Khalid Zarbane</p>
+                                <p class="text-blue-600 text-xs font-medium tracking-wide">Président de l'AMFAIM3D</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -572,6 +566,26 @@
                     <div class="mx-auto">
                         <h2 class="text-3xl sm:text-4xl md:text-6xl text-tarawera text-center mb-6 tracking-tight">Nos membres</h2>
                         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4 mb-4">
+                            <div class="col-span-2 md:col-span-1 flex justify-center md:block">
+                                <div class="bg-white h-48 rounded-xl sm:rounded-2xl overflow-hidden shadow-md sm:shadow-lg flex flex-col hover:shadow-xl transition-shadow border border-gray-100 w-[calc(50%-0.375rem)] sm:w-[calc(50%-0.5rem)] md:w-full max-w-xs mx-auto">
+                                    <div class="aspect-[4/3] w-full overflow-hidden h-3/4 ">
+                                        <img src="./assets/images/staff/Zarbane.jpg" alt="Pr. Khalid Zarbane" class="w-full h-full object-cover">
+                                    </div>
+                                    <div class="p-3 sm:p-5 flex flex-col items-center text-center h-1/4">
+                                        <h3 class="text-[13px] sm:text-base font-bold text-tarawera leading-tight mb-0 sm:mb-0">Pr. Khalid Zarbane</h3>
+                                        <span class="text-blue-600 font-medium text-[11px] sm:text-xs mb-0 sm:mb-2">Président</span>                          
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white h-48 rounded-xl sm:rounded-2xl overflow-hidden shadow-md sm:shadow-lg flex flex-col hover:shadow-xl transition-shadow border border-gray-100 w-full max-w-xs mx-auto">
+                                <div class="aspect-[4/3] w-full overflow-hidden h-3/4 ">
+                                    <img src="./assets/images/staff/Beidouri.jpg" alt="Pr. Zitouni Beidouri" class="w-full h-full object-cover">
+                                </div>
+                                <div class="p-3 sm:p-5 flex flex-col items-center text-center h-1/4">
+                                    <h3 class="text-[13px] sm:text-base font-bold text-tarawera leading-tight mb-0 sm:mb-0">Pr. Zitouni Beidouri</h3>
+                                    <span class="text-blue-600 font-medium text-[11px] sm:text-xs mb-0 sm:mb-2">Vice-Président</span>                          
+                                </div>
+                            </div>
                             <div class="bg-white h-48 rounded-xl sm:rounded-2xl overflow-hidden shadow-md sm:shadow-lg flex flex-col hover:shadow-xl transition-shadow border border-gray-100 w-full max-w-xs mx-auto">
                                 <div class="aspect-[4/3] w-full overflow-hidden h-3/4 ">
                                     <img src="./assets/images/staff/Kiass.jpg" alt="Elmehdi Kiass" class="w-full h-full object-cover">
@@ -596,16 +610,7 @@
                                 </div>
                                 <div class="p-3 sm:p-5 flex flex-col items-center text-center h-1/4">
                                     <h3 class="text-[13px] sm:text-base font-bold text-tarawera leading-tight mb-1 sm:mb-0">Pr. Mohamed Eloumami</h3>
-                                    <span class="text-blue-600 font-medium text-[11px] sm:text-xs mb-1 sm:mb-2">Trésorier</span>                           
-                                </div>
-                            </div>
-                            <div class="bg-white h-48 rounded-xl sm:rounded-2xl overflow-hidden shadow-md sm:shadow-lg flex flex-col hover:shadow-xl transition-shadow border border-gray-100 w-full max-w-xs mx-auto">
-                                <div class="aspect-[4/3] w-full overflow-hidden bg-white h-3/4">
-                                    <img src="./assets/images/staff/Berrada.jpg" alt="M. Rachid Berrada" class="w-full h-full object-cover">
-                                </div>
-                                <div class="p-3 sm:p-5 flex flex-col items-center text-center h-1/4">
-                                    <h3 class="text-[13px] sm:text-base font-bold text-tarawera leading-tight mb-1 sm:mb-0">M. Rachid Berrada</h3>
-                                    <span class="text-blue-600 font-medium text-[11px] sm:text-xs mb-1 sm:mb-2">Trésorier</span>                           
+                                    <span class="text-blue-600 font-medium text-[11px] sm:text-xs mb-1 sm:mb-2">Conseiller</span>                           
                                 </div>
                             </div>
                         </div>
@@ -650,10 +655,6 @@
                 </div>
             </section>
         </main>
-
-
-
-
 
         <footer class="bg-peach pb-3 w-full">
             <div class="mx-auto px-4 sm:px-6 md:px-12 lg:px-20 xl:px-60">
